@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    ---tituloprincipal:'Montserrat', sans-serif;
+    ---titulosecundario:'Caprasimo', cursive;
+    ---tituloterciario:'Montserrat', sans-serif;
+    ---cor: rgb(169, 6, 6);
+}
+
+* {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    column-gap: 20px;
+}
+
+#titheader {
+    font-family: var(---tituloprincipal);
+    color: var(---cor);
+    align-self: center;
+}
+
+.img {
+    display: none;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.img-cll {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#img-fla-logo-cll {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.304);
+    padding-bottom: 10px;
+}
+
+#img-fla-simbolo-cll {
+    border-bottom: 1px solid var(---cor);
+    padding-bottom: 10px;
+}
+
+.texto {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 70px;
+}
+
+.texto h1 {
+    font-family: var(---titulosecundario);
+    font-size: 2.5em;
+}
+
+.texto h2 {
+    font-family: var(---tituloterciario);
+    font-weight: bolder;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: var(---cor);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(---cor);
+    color: white;
+    transition: 0.3s;
+    transform: translate(-3px, -3px);
+}
+
+.red {
+    background-color: var(---cor);
+    color: black;
+}
+
+.black {
+    background-color: black;
+    color: var(---cor);
+}
+
+footer {
+    padding: 10px;
+    background-color: var(---cor);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+footer h2 {
+    font-family: var(---titulosecundario);
+    color: black;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 5px;
+}
+
+.redes-sociais a {
+    font-family: var(---tituloterciario);
+    font-weight: bolder;
+    color: black;
+}
+
+.redes-sociais a:hover {
+    color: white;
+    text-decoration: underline;
+}
