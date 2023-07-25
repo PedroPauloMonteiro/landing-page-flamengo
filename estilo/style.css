@@ -17,3 +17,90 @@
     margin: 0px;
     padding: 0px;
 }
+
+header {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    column-gap: 20px;
+}
+
+#titheader {
+    font-family: var(---tituloprincipal);
+    color: var(---cor);
+    align-self: center;
+}
+
+.texto h1 {
+    font-family: var(---titulosecundario);
+    font-size: 2.5em;
+}
+
+.texto h2 {
+    font-family: var(---tituloterciario);
+    font-weight: bolder;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: var(---cor);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(---cor);
+    color: white;
+    transition: 0.3s;
+    transform: translate(-3px, -3px);
+}
+
+.red {
+    background-color: var(---cor);
+    color: black;
+}
+
+.black {
+    background-color: black;
+    color: var(---cor);
+}
+
+footer {
+    padding: 10px;
+    background-color: var(---cor);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+footer h2 {
+    font-family: var(---titulosecundario);
+    color: black;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 5px;
+}
+
+.redes-sociais a {
+    font-family: var(---tituloterciario);
+    font-weight: bolder;
+    color: black;
+}
+
+.redes-sociais a:hover {
+    color: white;
+    text-decoration: underline;
+}
